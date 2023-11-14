@@ -18,17 +18,27 @@ main, div, section {
 }
 
 /* ------------------------------- */
+/* 메인 틀 */
 main {
     display: flex;
 }
 
-.empty {
-    flex-basis: 20%;
+.empty1 {
+    flex-basis: 15%;
     background-color: aqua;
 }
 
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+/* --------------------------------- */
+/* 로그인 부분 */
 #headerName {
     font-size: 30px;
+    margin-left: 30px;
 }
 
 #underLine {
@@ -36,3 +46,25 @@ main {
     width: 1300px;
 }
 
+/* ------------------------------ */
+/* 아이디, 비밀번호 입력 */
+#inputInfo {
+    display: flex;
+    justify-content: center;
+}
+
+.empty2 {
+    flex-basis: 30%;
+    background-color: blueviolet;
+}
+
+#inputIdPw {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+}
+
+#inputId :-webkit-input-placeholder{
+    /* text-align: right; */
+/* 방법 찾아 */
+}
