@@ -31,7 +31,8 @@ button:hover {
 main, div, section {
     /* border: 1px solid black; */
 }
-/* ------------------------------- */
+
+/* -------------------------- */
 /* 헤더바 */
 .topBar{
     width: 100%;
@@ -115,7 +116,7 @@ main {
 }
 
 /* --------------------------------- */
-/* 로그인 부분 */
+/* 대제목 */
 #headerName {
     font-size: 30px;
     margin-left: 20px;
@@ -129,7 +130,7 @@ main {
 }
 
 /* ------------------------------ */
-/* 아이디, 비밀번호 입력 */
+/* 이메일, 인증번호 입력 */
 #inputInfo {
     display: flex;
     justify-content: center;
@@ -139,20 +140,20 @@ main {
     flex-basis: 30%;
 }
 
-#inputIdPw {
+#inputEmailAuthekey {
     display: flex;
     flex-direction: column;
     flex-basis: 40%;
 }
 
-#inputId::placeholder {
+#inputEmail::placeholder {
     font-size: 11px;
 }
-#inputPw::placeholder {
+#inputAuthkey::placeholder {
     font-size: 11px;
 }
 
-#inputId, #inputPw {
+#inputEmail, #inputAuthkey {
     height: 30px;
     border: none;
     border-bottom: 2px solid black;
@@ -160,13 +161,19 @@ main {
     font-size: 18px;
 }
 
-#inputPw {
+#inputAuthkey {
     margin-top: 50px;
 }
 
+#authkeySendMassage {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
 /* ------------------------------------ */
-/* 간편로그인, 로그인버튼 */
-#loginBtnSection {
+/* PW 변경, 이전 페이지로 이동 버튼 */
+#searchIdBtnSection {
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -176,15 +183,11 @@ main {
     flex-basis: 20%;
 }
 
-#easyLoginBtn {
+#changePwBtn {
     flex-basis: 60%;
     display: flex;
     justify-content: space-around;
-}
-
-img {
-    width: 35px;
-    cursor: pointer;
+    height: 30px;
 }
 
 .clickBtn {
@@ -194,17 +197,22 @@ img {
     font-size: 17px;
 }
 
-/* ----------------------------- */
-/* 회원가입 ID,PW 찾기 버튼 */
-#signUpIdPwSection {
+/* --------------------------------- */
+/* 이메일 인증, 확인 버튼 */
+#emailCheckBtnSection {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: start;
 }
 
-#signUpIdPwBtn {
-    flex-basis: 60%;
-    display: flex;
-    justify-content: space-around;
-    height: 35px;
+.emailCheckBtn {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+#checkEmail {
+    margin-top: 80px;
 }
