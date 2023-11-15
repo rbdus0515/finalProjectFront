@@ -29,7 +29,7 @@ button:hover {
 }
 
 main, div, section {
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 /* -------------------------- */
@@ -130,7 +130,7 @@ main {
 }
 
 /* ------------------------------ */
-/* 이메일, 인증번호 입력 */
+/* 회원가입 정보 입력 */
 #inputInfo {
     display: flex;
     justify-content: center;
@@ -167,6 +167,47 @@ main {
     margin-top: 5px;
     margin-left: 8px;
 }
+/* ---------------------------------- */
+/* 프로필 이미지 구역 */
+#profileImgSection {
+    display: flex;
+}
+
+#inputProfileImg {
+    display: flex;
+    flex-basis: 60%;
+}
+
+#emptyWidth {
+    flex-basis: 10%;
+    background-color: blueviolet;
+}
+
+#profileImg {
+    width: 70px;
+    flex-basis: 30%;
+}
+
+#uploadImgBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 60%;
+}
+
+label {
+    border-bottom: 2px solid black;
+    font-size: 12px;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+#uploadProfileImg {
+    display: none;
+}
 
 /* ------------------------------------ */
 /* PW 변경, 이전 페이지로 이동 버튼 */
@@ -178,6 +219,7 @@ main {
 
 .empty3 {
     flex-basis: 20%;
+    background-color: aqua;
 }
 
 #changePwBtn {
