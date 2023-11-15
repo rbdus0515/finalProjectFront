@@ -29,7 +29,7 @@ button:hover {
 }
 
 main, div, section {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 /* -------------------------- */
@@ -171,16 +171,20 @@ main {
 /* 프로필 이미지 구역 */
 #profileImgSection {
     display: flex;
+    margin-top: 40px;
+}
+
+#emptyWidth1 {
+    flex-basis: 25%;
 }
 
 #inputProfileImg {
     display: flex;
-    flex-basis: 60%;
+    flex-basis: 65%;
 }
 
-#emptyWidth {
+#emptyWidth2 {
     flex-basis: 10%;
-    background-color: blueviolet;
 }
 
 #profileImg {
@@ -191,13 +195,14 @@ main {
 #uploadImgBtn {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     flex-basis: 60%;
 }
 
 label {
-    border-bottom: 2px solid black;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
     font-size: 12px;
 }
 
@@ -207,6 +212,14 @@ label:hover {
 
 #uploadProfileImg {
     display: none;
+}
+
+#deleteProfileImg {
+    margin-top: 25px;
+}
+
+#emptyWidth3 {
+    flex-basis: 10%;
 }
 
 /* ------------------------------------ */
@@ -219,7 +232,6 @@ label:hover {
 
 .empty3 {
     flex-basis: 20%;
-    background-color: aqua;
 }
 
 #changePwBtn {
@@ -254,4 +266,13 @@ label:hover {
 
 #checkEmail {
     margin-top: 80px;
+}
+
+
+
+
+/* --------------------- */
+/* 풋터 마진 */
+footer {
+    height: 100px;
 }
