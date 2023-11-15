@@ -109,7 +109,7 @@ main {
     flex-basis: 15%;
 }
 
-#loginForm {
+#signUpForm {
     display: flex;
     flex-direction: column;
     flex-basis: 70%;
@@ -140,20 +140,17 @@ main {
     flex-basis: 30%;
 }
 
-#inputEmailAuthekey {
+#inputSignUpForm {
     display: flex;
     flex-direction: column;
     flex-basis: 40%;
 }
 
-#inputEmail::placeholder {
-    font-size: 11px;
-}
-#inputAuthkey::placeholder {
+.inputSignUpInfo::placeholder {
     font-size: 11px;
 }
 
-#inputEmail, #inputAuthkey {
+.inputSignUpInfo {
     height: 30px;
     border: none;
     border-bottom: 2px solid black;
@@ -161,11 +158,11 @@ main {
     font-size: 18px;
 }
 
-#inputAuthkey {
-    margin-top: 50px;
+.inputSignUpInfo {
+    margin-top: 30px;
 }
 
-#authkeySendMassage {
+.sendMassage {
     font-size: 13px;
     margin-top: 5px;
     margin-left: 8px;
@@ -201,7 +198,7 @@ main {
 /* 이메일 인증, 확인 버튼 */
 #emailCheckBtnSection {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: start;
 }
 
