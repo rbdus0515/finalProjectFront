@@ -29,7 +29,7 @@ button:hover {
 }
 
 main, div, section {
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 /* -------------------------- */
@@ -106,9 +106,10 @@ main {
 
 .empty1 {
     flex-basis: 15%;
+    background-color: coral;
 }
 
-#loginForm {
+#myPageSection {
     display: flex;
     flex-direction: column;
     flex-basis: 70%;
@@ -125,18 +126,151 @@ main {
 
 #underLine {
     border: 2px solid black;
-    margin-bottom: 83px;
+    margin-bottom: 50px;
 }
 
 /* ------------------------------- */
+/* 정보 */
+
+/* 내 정보 */
+#myInfo {
+    display: flex;
+}
+
+.empty2 {
+    background-color: aqua;
+    flex-basis: 10%;
+}
+
+#infoMain {
+    flex-basis: 80%;
+    display: flex;
+}
+
+.empty3 {
+    flex-basis: 5%;
+    background-color: blanchedalmond;
+}
+
+#profileImg {
+    width: 130px;
+}
+
+#nameTel, #nicknameEmail {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#nameTel, #nicknameEmail > p {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    font-size: 15px;
+}
+
+.btnSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.btnSection > button {
+    border: none;
+    background-color: transparent;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    font-weight: 600;
+}
+/* ---------------------------- */
+/* 쇼핑 정보 */
+#shopingListSection {
+    display: flex;
+}
+
+#subName {
+    margin-top: 50px;
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.underLine2 {
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+#shopingList {
+    flex-basis: 80%;
+}
+
+#shopingListInfo {
+    display: flex;
+}
+
+#shopingHistoryInfo {
+    display: flex;
+    flex-basis: 80%;
+}
+
+#shopingHistoryInfo > img {
+    width: 210px;
+}
+
+#shopingInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-basis: 60%;
+}
+
+#reviewRebuyDeleteBtnSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-basis: 10%;
+}
+
+#reviewRebuyDeleteBtnSection > button {
+    border: none;
+    background-color: transparent;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+    font-weight: 600;
+}
 
 
+/* ------------------------------ */
+/* 관심 상품 */
+#wishListSection {
+    display: flex;
+}
 
+#wishList {
+    flex-basis: 80%;
+}
 
+#wishListItems {
+    display: flex;
+}
 
+.itemSection {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
 
+.wishItem {
+    width: 140px;
+}
 
-
+.empty4 {
+    flex-basis: 3%;
+    background-color: chartreuse;
+}
 
 
 
