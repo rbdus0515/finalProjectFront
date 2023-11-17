@@ -194,136 +194,29 @@ main {
 }
 /* --------------------------- */
 /* 예약 정보 확인, 1대 1 문의, 업데이트 요청 */
-#functionBtn {
+.functionBtn {
     display: flex;
     justify-content: space-evenly;
     margin-top: 50px;
 }
 
-#functionBtn a {
+.functionBtn a {
     font-size: 17px;
 }
 
-#functionBtn span {
+.functionBtn span {
     color: red;
 }
 
-/* ---------------------------- */
-/* 쇼핑 정보 */
-#shopingListSection {
-    display: flex;
+#functionBtn2 > :nth-child(2){
+    margin-left: 58px;
 }
 
-#subName {
-    margin-top: 100px;
-    font-size: 30px;
-    margin-left: 20px;
-    font-weight: 600;
-}
-
-.underLine2 {
-    border: 2px solid black;
-    margin-bottom: 10px;
-}
-
-#shopingList {
-    flex-basis: 80%;
-}
-
-#shopingListInfo {
-    display: flex;
-}
-
-#shopingHistoryInfo {
-    display: flex;
-    flex-basis: 80%;
-}
-
-#shopingHistoryInfo > img {
-    width: 210px;
-}
-
-#shopingInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-basis: 60%;
-}
-
-#shopingInfo a {
-    display: inline-block;
-}
-
-#reviewRebuyDeleteBtnSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-basis: 10%;
-}
-
-/* ------------------------------ */
-/* 관심 상품 */
-#wishListSection {
-    display: flex;
-}
-
-#wishList {
-    flex-basis: 80%;
-}
-
-#wishListItems {
-    display: flex;
-}
-
-.itemSection {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-.itemSection > p {
-    font-size: 13px;
-}
-
-.wishItem {
-    width: 140px;
-}
-
-.empty4 {
-    flex-basis: 3%;
+#functionBtn2 > :nth-child(3){
+    margin-right: 2px;
 }
 
 
-/* ------------------------------------ */
-/* 문의사항, 커뮤니티 공통사항 */
-.textSection {
-    display: flex;
-}
-
-.textListSection {
-    flex-basis: 80%;
-}
-
-.textItemSection {
-    display: flex;
-}
-
-.textItmeList {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 80%;
-}
-
-.textList {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-}
-
-.textList {
-    font-size: 15px;
-}
 
 /* ------------------------------ */
 /* 풋터 위 공간 */

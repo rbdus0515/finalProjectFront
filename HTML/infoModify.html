@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원가입</title>
+    <title>프로필 관리</title>
 
-    <link rel="stylesheet" href="/CSS/signUp.css">
+    <link rel="stylesheet" href="/CSS/infoModify.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,18 +25,19 @@
             </div>
 
             <div class="rightOfTopMenu">
+                <a href="#">LOGIN</a>
                 <a href="#">TOP</a>
             </div>
-            
+
         </div>
-        
-        <a class="mainTitle">C A M P L E X </a>
-        
+
+        <a class="mainTitle" href="/">C A M P L E X </a>
+
         <div class="bottomMenu">
             <a href="#">CAMPING</a>
             <a href="#">RENTAL</a>
             <a href="#">BOARD</a>
-            <a href="#">ORDER</a>
+            <a href="#">EVENT</a>
         </div>
 
     </header>
@@ -48,7 +49,7 @@
         <section id="signUpForm">
 
             <!-- 대제목 -->
-            <section id="headerName">회원가입</section>
+            <section id="headerName">프로필 관리</section>
             <hr id="underLine"/>
             
             <section id="inputInfo">
@@ -57,32 +58,13 @@
                 <!-- 회원가입 정보 입력 -->
                 <section id="inputSignUpForm">
 
-                    <input class="inputSignUpInfo" id="inputEmail" type="email" placeholder="이메일 (아이디)">
-                    <p class="sendMassage">사용 가능한 아이디입니다.</p>
-                    
-                    <input class="inputSignUpInfo" id="inputPw" type="password" placeholder="비밀번호">
-                    
-                    <input class="inputSignUpInfo" id="inputPwRe" type="password" placeholder="비밀번호 확인">
-                    <p class="sendMassage">사용 가능한 비밀번호입니다.</p>
-                    
-                    <input class="inputSignUpInfo" id="inputName" type="text" placeholder="이름">
-                    
-                    <input class="inputSignUpInfo" id="inputNickname" type="text" placeholder="닉네임">
-                    <p class="sendMassage">사용 가능한 닉네임입니다.</p>
-                    
-                    <input class="inputSignUpInfo" id="inputTel" type="tel" placeholder="휴대전화">
-                    <p class="sendMassage">인증번호가 발송되었습니다.</p>
-                    
-                    <input class="inputSignUpInfo" id="inputAuthkey" type="text" placeholder="인증번호">
-                    <p class="sendMassage">인증되었습니다.</p>
-
                     <!-- 프로필 이미지 입력 -->
                     <section id="profileImgSection">
                         <section id="emptyWidth1"></section>
 
                         <section id="inputProfileImg">
 
-                            <img id="profileImg" src="/IMG/gg_profile.png">
+                            <img id="profileImg" src="/IMG/pingping.png">
                             
                             <section id="emptyWidth2"></section>
 
@@ -97,13 +79,24 @@
                         <section id="emptyWidth3"></section>
                     </section>
 
+                    <input class="inputSignUpInfo" id="inputNickname" type="text" placeholder="닉네임">
+                    <p class="sendMassage">사용 가능한 닉네임입니다.</p>
+                    
+                    <input class="inputSignUpInfo" id="inputTel" type="tel" placeholder="휴대전화">
+                    <p class="sendMassage">인증번호가 발송되었습니다.</p>
+                    
+                    <input class="inputSignUpInfo" id="inputAuthkey" type="text" placeholder="인증번호">
+                    <p class="sendMassage">인증되었습니다.</p>
+
+                    
+
                     <section id="searchIdBtnSection">
                         <section class="empty3"></section>
                         
                         <!-- 회원가입, 이전 페이지로 이동 버튼 -->
                         <section id="changePwBtn">
-                            <button class="clickBtn">가입하기</button>
-                            <button class="clickBtn">이전으로</button>
+                            <a class="clickBtn">수정완료</a>
+                            <a class="clickBtn">비밀번호 변경</a>
                         </section>
                         
                         <section class="empty3"></section>
@@ -112,8 +105,8 @@
                 </section>
 
                 <section class="empty2" id="telCheckBtnSection">
-                    <button class="telCheckBtn" id="checkTel">확인</button>
-                    <button class="telCheckBtn" id="checkTelAuthkey">인증</button>
+                    <a class="telCheckBtn" id="checkTel">확인</a>
+                    <a class="telCheckBtn" id="checkTelAuthkey">인증</a>
                 </section>
 
             </section>
@@ -126,7 +119,25 @@
 
     </main>
 
-    <footer></footer>
+    <div class="empty4"></div>
+
+    <footer class="bottomBar">
+        <a class="footerTitle">CAMPLEX</a>
+
+        <div class="footerMenu">
+            <a href="#">ABOUT US</a> <p class="menuDiv">|</p>
+            <a href="#">AGREEMENT</a> <p class="menuDiv">|</p>
+            <a href="#">GUIDE</a>
+        </div>
+
+        <div class="footerContent">
+            <p>회사명 캠플렉스 주식회사</p>
+            <p>주소 서울특별시 중구 남대문로 120</p>
+            <p>본 사이트내 모든 이미지 및 컨텐츠 등은 저작권법 제4조의 의한 저작물로써</p> 
+            <p>소유권은 CAMPLEX 주식회사 에게 있으며, 무단 도용시 법적인 제재를 받을 수 있습니다.</p>
+        </div>
+
+    </footer>
     
 </body>
 </html>
