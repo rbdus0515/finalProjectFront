@@ -53,57 +53,130 @@
             <hr id="underLine"/>
             
             <!-- 정보 -->
-            <section id="myInfo">
+            <section id="inputInfo">
                 <!-- 내부공백 (우) -->
                 <section class="empty2"></section>
                 
-                <!-- 내 정보 -->
+                <!-- 캠핑장 정보 정보 -->
                 <section id="infoMain">
-                    <img id="profileImg" src="/IMG/pingping.png">
                     
-                    <section class="empty2"></section>
-                    <section id="nameTel">
-                        <p>이름 : 홍길동</p>
-                        <p>전화번호 : 010-1234-5678</p>
+                    <section class="empty3"></section>
+
+                    <!-- 캠핑장 명, 주소 입력 -->
+                    <section id="placeInfo">
+                        <section class="inputInfo" id="inputTitle">
+                            <span>캠핑장 명 :</span>
+                            <input type="text">
+                        </section>
+
+                        <section class="inputInfo" id="inputAddress">
+                            <span>캠핑장 주소 :</span>
+                            <input type="text">
+                        </section>
                     </section>
+
+                    
                     <section class="empty3"></section>
                     
-                    <section id="nicknameEmail">
-                        <p>닉네임 : 홍로드브론즈</p>
-                        <p>Email : test1234@naver.com</p>
-                    </section>
-                    <section class="empty2"></section>
-                    
-                    <section class="btnSection">
-                        <a>프로필 관리</a>
-                        <a>회원 탈퇴</a>
-                    </section>
                 </section>
                 
                 
                 <!-- 내부공백 (좌) -->
                 <section class="empty2"></section>
             </section>
-            
 
-            <!-- 예약 정보 확인, 1대 1문의, 업데이트 요청 -->
-            <section class="functionBtn">
-                <a>예약 정보 확인<span>&nbsp;&nbsp;3</span></a>
-                <a>1대 1 문의<span>&nbsp;&nbsp;1</span></a>
-                <a>업데이트 요청<span>&nbsp;&nbsp;2</span></a>
+            <!-- 업로드 할 이미지 -->
+            
+            <section id="uploadImgSection">
+                <section class="empty2"></section>
+
+                <section id="inputImgListSection">
+                        
+                    <section id="uploadImgTitle">
+                        업로드 할 이미지 (9개)
+                    </section>
+                    <hr id="mideUnderLine"/>
+                    
+                    <section class="inputImgList">
+                        <img class="uploadImg" src="/IMG/1.png">
+                        <img class="uploadImg" src="/IMG/2.png">
+                        <img class="uploadImg" src="/IMG/3.png">
+                    </section>
+
+                    <section class="inputImgList">
+                        <img class="uploadImg" src="/IMG/4.png">
+                        <img class="uploadImg" src="/IMG/5.png">
+                        <img class="uploadImg" src="/IMG/6.png">
+                    </section>
+                    
+                    <section class="inputImgList">
+                        <img class="uploadImg" src="/IMG/7.png">
+                        <img class="uploadImg" src="/IMG/8.png">
+                        <img class="uploadImg" src="/IMG/9.png">
+                    </section>
+
+                </section>
+
+                
+                <section class="empty2"></section>
             </section>
             
-            <section class="functionBtn" id="functionBtn2">
-                <a>공지사항</a>
-                <a>캠핑장 업로드</a>
-                <a>렌탈 상품 업로드</a>
-            </section>
+            <!-- 캠핑장 정보 입력 -->
+            <section class="inputInfoSection">
+                
+                <section class="empty2"></section>
+                
+                <section class="inputInfoText">
+                    <p>캠핑장 설명</p>
+                    <section id="textareaSection">
+                        <textarea></textarea>
+                    </section>
+                </section>
 
-            <section class="functionBtn">
+                <section class="inputInfoText">
+                    <p>부대시설</p>
+                    <section id="textareaSection">
+                        <textarea></textarea>
+                    </section>
+                </section>
+                
+                <section class="empty2"></section>
             </section>
-
             
+            <section class="inputInfoSection">
+                
+                <section class="empty2"></section>
+
+                <section class="inputInfoText">
+                    <p>주변 환경</p>
+                    <section id="textareaSection">
+                        <textarea></textarea>
+                    </section>
+                </section>
+
+                <section class="inputInfoText">
+                    <p>매너시간 외 추가 정보</p>
+                    <section id="textareaSection">
+                        <textarea></textarea>
+                    </section>
+                </section>
+
+                <section class="empty2"></section>
+            </section>
+            
+            <!-- 서식 전송 버튼 -->
+            <section id="formSendBtn">
+
+                <section>
+                    <a id="sendBtn">서식 전송</a>
+                </section>
+
+                <section class="empty2"></section>
+            </section>
+
+            <section class="empty2"></section>
         </section>
+
         
         <!-- 공백 (좌) -->
         <section class="empty1"></section>

@@ -150,8 +150,8 @@ main {
 /* ------------------------------- */
 /* 정보 */
 
-/* 내 정보 */
-#myInfo {
+/* 캠핑장 정보 */
+#inputInfo {
     display: flex;
 }
 
@@ -160,68 +160,125 @@ main {
 }
 
 #infoMain {
-    flex-basis: 80%;
     display: flex;
+    flex-basis: 80%;
 }
 
 .empty3 {
-    flex-basis: 5%;
+    flex-basis: 15%;
 }
 
-#profileImg {
-    width: 130px;
-}
-
-#nameTel, #nicknameEmail {
-    flex-basis: 25%;
+#placeInfo {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-basis: 70%;
+    justify-content: space-between;
 }
 
-#nameTel, #nicknameEmail > p {
-    text-decoration-line: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 5px;
+.inputInfo {
+    font-size: 18px;
+    border-bottom: 2px solid black;
+}
+
+#inputTitle input {
+    border: none;
     font-size: 15px;
+    width: 150px;
 }
 
-.btnSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+#inputAddress input {
+    border: none;
+    font-size: 15px;
+    width: 300px;
 }
+
 /* --------------------------- */
-/* 예약 정보 확인, 1대 1 문의, 업데이트 요청 */
-.functionBtn {
+/* 업로드 할 이미지 */
+#uploadImgSection {
     display: flex;
-    justify-content: space-evenly;
+}
+
+#uploadImgTitle {
+    font-size: 20px;
+    margin-left: 17px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+#inputImgListSection {
+    flex-basis: 80%;
     margin-top: 50px;
 }
 
-.functionBtn a {
+#mideUnderLine {
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.inputImgList {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.uploadImg {
+    width: 220px;
+}
+
+/* --------------------------- */
+/* 캠핑장 정보 입력 */
+.inputInfoSection {
+    display: flex;
+    margin-top: 50px;
+}
+
+.inputInfoText {
+    flex-basis: 40%;
+}
+
+.inputInfoText p {
+    text-decoration: underline 2px;
+    text-underline-offset: 5px;
+    font-weight: bold;
     font-size: 17px;
 }
 
-.functionBtn span {
-    color: red;
+#textareaSection {
+    display: flex;
+    justify-content: center;
 }
 
-#functionBtn2 > :nth-child(2){
-    margin-left: 58px;
+#textareaSection textarea {
+    margin-top: 20px;
+    width: 80%;
+    height: 100px;
+    resize: none;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: 17px;
 }
 
-#functionBtn2 > :nth-child(3){
-    margin-right: 2px;
+/* ------------------------------ */
+/* 서식 전송 버튼 */
+#formSendBtn {
+    display: flex;
+    justify-content: end;
+    margin-top: 100px;
 }
 
+#sendBtn {
+    font-size: 20px;
+    font-weight: bold;
+}
 
+#sendBtn::after {
+    margin-top: 5px;
+    
+}
 
 /* ------------------------------ */
 /* 풋터 위 공간 */
 .empty5 {
-    height: 300px;
+    height: 150px;
 }
 
 
